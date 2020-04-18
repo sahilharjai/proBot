@@ -1,0 +1,29 @@
+# Creating Postgres DB
+
+CREATE DATABASE probootdb;
+CREATE USER prouser WITH ENCRYPTED PASSWORD '<your-password>';
+GRANT ALL PRIVILEGES ON DATABASE probotdb TO prouser;
+
+create table chat_history (
+	id SERIAL PRIMARY KEY,
+	content varchar(200) NOT NULL,
+	created_by varchar(50)  NOT NULL,
+	created timestamp NOT NULL
+);
+
+grant ALL PRIVILEGES on table chat_history to prouser;
+grant ALL PRIVILEGES on table chat_history_id_seq to prouser;
+
+
+# Activate environment
+
+source <your-environment-name>/bin/activate
+
+# Initialize environment Variables:
+export PSQL_USER=prouser
+export PSQL_PORT=5432
+export PSQL_DB=probotdb
+export PSQL_HOST=localhost
+export PSQL_PASSWORD=<your-password>
+
+export DISCORD_TOKEN=NzAwNzM4OTUwOTcyNzAyODAw.XpnWdA.EydvFtaQ3fQpa48eUlToZkEl0VU
