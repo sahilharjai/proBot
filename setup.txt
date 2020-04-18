@@ -26,4 +26,4 @@ export PSQL_DB=probotdb
 export PSQL_HOST=localhost
 export PSQL_PASSWORD=<your-password>
 
-export DISCORD_TOKEN=NzAwNzM4OTUwOTcyNzAyODAw.XpnWdA.EydvFtaQ3fQpa48eUlToZkEl0VU
+export DISCORD_TOKEN=""
