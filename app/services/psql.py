@@ -4,7 +4,6 @@ import sys
 import psycopg2
 from psycopg2.extras import execute_values, DictCursor
 
-from app.config.prod import PSQL_DB, PSQL_USER, PSQL_HOST, PSQL_PORT, PSQL_PASSWORD
 from app.constants import TABLE_NAME, TABLE_COLUMNS
 from utilities.logger import LoggerManager
 
